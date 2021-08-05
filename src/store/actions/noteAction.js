@@ -35,22 +35,6 @@ export const deleteNote = (note) => {
   };
 };
 
-export const getFavNotes = () => {
-  return (dispatch, getState, { getFirestore }) => {
-    // make async call to database
-    const firestore = getFirestore();
-
-    firestore
-      .collection("notes")
-      .get()
-      .then((snapshot) => {
-        snapshot.docs.forEach((doc) => {
-          console.log(doc);
-        });
-      });
-  };
-};
-
 export const toggleFav = (note) => {
   return (dispatch, getState, { getFirestore }) => {
     // make async call to database
@@ -80,6 +64,22 @@ export const updateNote = (note) => {
       })
       .catch((err) => {
         console.log(err);
+      });
+  };
+};
+
+export const getFavNotes = () => {
+  return (dispatch, getState, { getFirestore }) => {
+    // make async call to database
+    const firestore = getFirestore();
+
+    firestore
+      .collection("notes")
+      .get()
+      .then((snapshot) => {
+        snapshot.docs.forEach((doc) => {
+          console.log(doc);
+        });
       });
   };
 };

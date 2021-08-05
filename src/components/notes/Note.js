@@ -1,4 +1,3 @@
-// import React from "react";
 import { deleteNote, toggleFav } from "../../store/actions/noteAction";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";

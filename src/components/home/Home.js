@@ -1,4 +1,3 @@
-import React from "react";
 import Form from "./Form";
 import NotesList from "../notes/NotesList";
 import { useSelector } from "react-redux";
@@ -9,8 +8,7 @@ function Home() {
     { collection: "notes", orderBy: ["createdAt", "desc"] },
   ]);
   const notes = useSelector((state) => state.firestore.ordered.notes);
-  console.log("home", notes);
-  
+
   return (
     <div className="container ">
       <div className="row center-align">

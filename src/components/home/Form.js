@@ -1,4 +1,3 @@
-import React from "react";
 import useInput from "../../customhook/useInput";
 import { addNote } from "../../store/actions/noteAction";
 import { useDispatch } from "react-redux";
