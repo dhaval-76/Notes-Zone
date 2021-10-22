@@ -1,3 +1,7 @@
+# Notes Zone App
+Notes Zone is a notes taking app built using react and firebase. It has all basic features like create, edit, delete, display notes. It also has features like add to favorite section. It uses firebase to store data.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
